@@ -250,6 +250,10 @@ class Human extends Living implements ProjectileSource, InventoryHolder{
 		return $this->xpSeed;
 	}
 
+	public function randomizeXpSeed() : void{
+		$this->xpSeed = random_int(Limits::INT32_MIN, Limits::INT32_MAX);
+	}
+
 	public function setXpSeed(int $xpSeed) : void{
 		$this->xpSeed = $xpSeed;
 	}
@@ -361,7 +365,7 @@ class Human extends Living implements ProjectileSource, InventoryHolder{
 		if(($xpSeedTag = $nbt->getTag(self::TAG_XP_SEED)) instanceof IntTag){
 			$this->xpSeed = $xpSeedTag->getValue();
 		}else{
-			$this->xpSeed = random_int(Limits::INT32_MIN, Limits::INT32_MAX);
+			$this->randomizeXpSeed();
 		}
 	}
 

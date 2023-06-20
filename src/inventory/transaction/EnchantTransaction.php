@@ -99,6 +99,7 @@ class EnchantTransaction extends InventoryTransaction{
 			$networkSession->getEntityEventBroadcaster()->syncAttributes([$networkSession], $this->source, $this->source->getAttributeMap()->getAll());
 			return;
 		}
+		$this->source->randomizeXpSeed();
 
 		if($this->source->isCreative()){
 			return;
