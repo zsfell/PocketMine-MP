@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "01dabd17488f8f5a5ac5c65b9eb8eea4",
+    "content-hash": "85b15573b0a37fabbd1b55b33eefc812",
     "packages": [
         {
             "name": "adhocore/json-comment",
@@ -202,12 +202,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/NetherGamesMC/BedrockData.git",
-                "reference": "7ceeea5943860c819feb901dc900e9b4001f97cd"
+                "reference": "cd5044ec0558f8a65eae85446703c325536896e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/NetherGamesMC/BedrockData/zipball/7ceeea5943860c819feb901dc900e9b4001f97cd",
-                "reference": "7ceeea5943860c819feb901dc900e9b4001f97cd",
+                "url": "https://api.github.com/repos/NetherGamesMC/BedrockData/zipball/cd5044ec0558f8a65eae85446703c325536896e0",
+                "reference": "cd5044ec0558f8a65eae85446703c325536896e0",
                 "shasum": ""
             },
             "default-branch": true,
@@ -219,7 +219,7 @@
             "support": {
                 "source": "https://github.com/NetherGamesMC/BedrockData/tree/master"
             },
-            "time": "2023-06-07T19:56:57+00:00"
+            "time": "2023-07-01T11:58:24+00:00"
         },
         {
             "name": "nethergamesmc/bedrock-protocol",
