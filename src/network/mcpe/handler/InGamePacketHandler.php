@@ -799,7 +799,7 @@ class InGamePacketHandler extends ChunkRequestPacketHandler{
 
 			try{
 				if(!$block->updateText($this->player, $text)){
-					foreach($this->player->getWorld()->createBlockUpdatePackets([$pos]) as $updatePacket){
+					foreach($this->player->getWorld()->createBlockUpdatePackets(RuntimeBlockMapping::getMappingProtocol($this->session->getProtocolId()), [$pos]) as $updatePacket){
 						$this->session->sendDataPacket($updatePacket);
 					}
 				}
